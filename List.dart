@@ -31,22 +31,39 @@ void main() {
   list7.insertAll(0, ["kibria", "manik", "sohag", "helal"]); //insert all way
   print(list7.indexOf("sohag")); //fixed item index position in list
   bool hh = list7.isNotEmpty;
-  if(hh==true){//chek list empty or not and how to clear a list
+  if (hh == true) {
+    //chek list empty or not and how to clear a list
     print("list7 is no empty");
   }
   list7.clear();
-  if(list7.isNotEmpty){
+  if (list7.isNotEmpty) {
     print("now list7 is not empty");
-  }else if(list7.isEmpty){
+  } else if (list7.isEmpty) {
     print("now list7 is empty");
   }
   //now replace a list item
-  list7.insertAll(0, ["kibria", "manik", "sohag", "helal"]); //here i want to replace sohag now what i do.
-  list7.replaceRange(1, 3, ["jakariya"]);//this is one index replace way
+  list7.insertAll(0, [
+    "kibria",
+    "manik",
+    "sohag",
+    "helal"
+  ]); //here i want to replace sohag now what i do.
+  list7.replaceRange(1, 3, ["jakariya"]); //this is one index replace way
   print(list7);
-  list7.insertAll(0, ["kibria", "manik", "sohag", "helal"]); //here i want to replace manik and  sohag  now what i do.
-  list7.replaceRange(0, 3, ["ariyan","khoill"]);//mane ami jei koitai replace orte chai na keno sei koitar ager value
+  list7.insertAll(0, [
+    "kibria",
+    "manik",
+    "sohag",
+    "helal"
+  ]); //here i want to replace manik and  sohag  now what i do.
+  list7.replaceRange(0, 3, [
+    "ariyan",
+    "khoill"
+  ]); //mane ami jei koitai replace orte chai na keno sei koitar ager value
   // and last value bole dilei enough
   print(list7);
-
+//now get data from list/map/set using loop
+  for (var myData in list7) {
+    print(myData);
+  }
 }
